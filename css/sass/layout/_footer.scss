@@ -1,0 +1,70 @@
+
+// Start Footer
+
+footer {
+    @include padding(80px 70px);
+    border-bottom: 1px solid #e3e3e3;
+    .word {
+        margin-bottom: 30px;
+        h5 {
+            font-size: 22px;
+            font-weight: normal;
+            @extend %txtcap;
+        }
+        ul {
+            margin-top: 20px;
+            li {
+                line-height: 2;
+                overflow: hidden;
+                width: fit-content;
+                @extend %cpointer;
+                height: 35px;
+                display: block;
+                &:before {
+                    background-color: #{$mainColor};
+                    height: 2px;
+                }
+            }
+        }
+        p {
+            margin-top: 20px;
+        }
+        .icon {
+            margin-top: 15px;
+            i:not(:last-of-type) {
+                margin-right: 20px;
+            }
+            i {
+                @extend %cpointer;
+            }
+        }
+    }
+    form {
+        margin-top: 20px;
+        input[type="email"]{
+            background-color: #fff;
+            border: 2px solid #{$mainColor};
+            color: #{$mainColor};
+            padding: 1rem 2rem;
+            margin-bottom: 20px;
+            &:hover {
+                background-color: #fff;
+            }
+        }
+
+        input[type="submit"]{
+            border: 2px solid #{$mainColor};
+            padding: 1rem 2rem;
+        }
+    }
+}
+
+// End Footer
+
+// Start Copyright
+
+.copy {
+    @include padding(40px 70px);
+}
+
+// End Copyright

@@ -1,0 +1,101 @@
+// Start Header
+
+header {
+    background-color: #{$mainColor};
+    @include padding(0px 50px);
+    .navbar {
+        @include padding(0px 0px);
+        i {
+            color: #FFF;
+            font-size: 19px;
+            &:not(:last-of-type) {
+                margin-right: 10px;
+            }     
+        }
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: #FFF;
+        @extend %trans;
+        &:hover {
+            color: #{$backgroundColor};
+        }
+    }
+}
+
+// End Header
+
+// Start Navbar
+
+.Navbar {
+    background-color: #{$backgroundColor};
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    @include padding(25px 50px);
+    .row {
+        align-items: center;
+        >.col {
+            &:first-of-type {
+                @media #{$Medium} {
+                    flex-basis: 360px;
+                    h2 {
+                        margin: auto !important;
+                    }
+                }
+            }
+            &:last-of-type {
+                @media #{$Medium} {
+                    flex-basis: 0px;
+                    flex-grow: 0;
+                }
+            }
+            .word {
+                display: flex;
+                align-items: center;
+                i {
+                    font-size: 20px;
+                }
+                h2 {
+                    margin-left: 20px;
+                }
+            }
+            .list {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    li {
+                        @extend %txtcap;
+                        @extend %cpointer;
+                        height: 35px;
+                        line-height: 35px;
+                        &:not(:last-of-type) {
+                            margin-right: 30px;
+                        }
+                        &:before {
+                            background-color: #{$mainColor};
+                            height: 2px;
+                        }
+                    }
+                }
+            }
+            .text {
+                text-align: end;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                p {
+                    @extend %txtcap;
+                    @extend %cpointer;
+                }
+                i {
+                    margin-left: 20px;
+                    font-size: 20px;
+                    @extend %cpointer;
+                }
+            }
+        }
+    }
+}
+
+// End Navbar

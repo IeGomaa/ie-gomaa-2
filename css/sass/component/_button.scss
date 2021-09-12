@@ -1,0 +1,27 @@
+.big {
+    background-color: #{$mainColor};
+    color: #FFF;
+    padding: 1.3rem 1.8rem;
+    border: 0;
+    outline: none;
+    font-size: 1.25rem;
+    @extend %txtcap;
+    @media #{$Medium} {
+        @include padding(10px 15px);
+        font-size: 15px;
+    }
+    &:hover {
+        background-color: rgba( $mainColor , .8);
+    }
+}
+
+.small {
+    background-color: #FFF;
+    width: fit-content;
+    border: 0;
+    outline: none;
+    @include padding(6px 20px);
+    @include prefixer(border-radius,5px,(webkit moz o));
+    margin: auto;
+    @extend %cpointer;
+}

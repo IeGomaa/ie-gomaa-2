@@ -1,0 +1,305 @@
+// Start Slider
+
+.slider {
+    @include padding(50px 0px);
+    background-color: #{$backgroundColor};
+    position: relative;
+    h4 {
+        margin-top: 10px;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        right: 150px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        left: 150px;
+    }
+    .owl-carousel .owl-nav button.owl-next, 
+    .owl-carousel .owl-nav button.owl-prev {
+        position: absolute;
+        top: 40%;
+        line-height: 50px;
+        background-color: #{$backgroundColor};
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 25px;
+        font-weight: normal;
+        outline: none;
+        overflow: hidden;
+        @extend %trans;
+        &:hover {
+            background-color: #{$mainColor};
+        }   
+    }
+    .owl-theme .owl-dots .owl-dot {
+        outline: none;
+        &.active span {
+            background-color: #b9a16b;
+        }
+        span {
+            width: 7px;
+            height: 7px;
+        }
+    }
+    .text {
+        text-align: center;
+        p {
+            font-size: 13px;
+            margin: 20px 0;
+        }
+    }
+}
+
+// End Slider
+
+// Start Video
+
+.video {
+    @include padding(100px 0);
+    position: relative;
+    overflow: hidden;
+    .row {
+        align-items: center;
+        button {
+            background-color: #{$mainColor};
+            color: #FFF;
+        }
+        h1 {
+            font-size: 40px;
+            @media #{$Mobile} {
+                font-size: 35px;
+            }
+        }
+        .image {
+            overflow: hidden;
+            @extend %cpointer;
+            position: relative;
+            @media #{$Medium} {
+                margin-top: 30px;
+            }
+            img {
+                @extend %trans;
+                
+            }
+            &:hover img {
+                @include prefixer(transform,scale(1.02),(webkit moz o));
+            }
+            .back {
+                position: absolute;
+                z-index: 2;
+                top: 50%;
+                @include prefixer(transform,translate(-50%,-50%),(webkit moz o));
+                left: 50%;
+                i {
+                    border: 5px solid #fff;
+                    color: #FFF;
+                    width: 98px;
+                    height: 98px;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 50%;
+                    font-size: 32px;
+                    align-items: center;
+                    padding-left: 3px;
+                    @extend %trans;
+                    &:hover {
+                        @include prefixer(transform,scale(1.1),(webkit moz ms o));
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Video
+
+// Start hidden Video
+
+.hide-video {
+    background-color: #f2f2f26e;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 5;
+    display: none;
+    .box {
+        position: relative;
+        top: 50%;
+        iframe {
+            position: absolute;
+            top: 50%;
+            @include prefixer(transform,translate(-50%,-50%),(webkit moz o));
+            left: 50%;
+        }
+    }
+    .icon {
+        text-align: center;
+        position: absolute;
+        top: 30px;
+        right: 21%;
+        i {
+            font-size: 25px;
+            color: #{$mainColor};
+            @extend %cpointer;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+    
+}
+
+// End hidden Video
+
+// Start Running
+
+.running {
+    background-color: #{$backgroundColor};
+    padding-top: 80px;
+    .word {
+        h3 {
+
+        }
+        p {
+            margin: 25px 0;
+        }
+        button {
+
+        }
+        .image {
+            width: 70%;
+            margin: auto;
+            margin-top: 20px;
+            img {
+
+            }
+        }
+    }
+}
+
+// End Running
+
+// Start Testimonials
+
+.testimonials {
+    @include padding(70px 0);
+    overflow: hidden;
+    .word {
+        .box {
+            width: 610px;
+            text-align: left;
+            margin: auto;
+            .icon {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .one .fa-minus,
+            .two .fa-plus {
+                display: none
+            }
+            .special {
+                display: none;
+                @media #{$Medium} {
+                    font-size: 13px;
+                    width: 421px;
+                }
+            }
+            .speclist {
+                li {
+                    @media #{$Medium} {
+                        font-size: 13px;
+                    }
+                }
+            }
+            h5 {
+                @extend %txtcap;
+                @extend %cpointer;
+                display: inline-block;
+                font-size: 18px;
+            }
+            p {
+                font-size: 15px;
+                margin-left: 28px;
+            }
+            ul {
+                margin-left: 28px;
+                li {
+                    line-height: 1.7;
+                }
+            }
+            padding: 15px 0;
+            border-bottom: 1px solid #e3e3e3;
+        }
+    }
+}
+
+// End Testimonials
+
+// Start Surprise
+
+.surprise {
+    background-color: #{$backgroundColor};
+    padding-top: 80px;
+    p {
+        width: 570px;
+        margin: 20px auto;
+        @media #{$Mobile} {
+            width: 400px;
+        }
+    }
+    .image {
+        margin-top: 30px;
+        width: 70%;
+        margin: auto;
+    }
+}
+
+// End Surprise
+
+// Start Rider
+
+.rider {
+    padding-top: 60px;
+    .image {
+        padding-top: 60px;
+    }
+}
+
+// End Rider
+
+// Start Traction
+
+.traction {
+    padding-top: 60px;
+    .image {
+        position: relative;
+        padding-top: 60px;
+        overflow: hidden;
+        .text {
+            position: absolute;
+            color: #FFF;
+            width: 500px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            button.small {
+                background-color: #b9a16b;
+                color: #FFF;
+            }
+            h2 {
+                margin: 20px 0;
+            }
+            p {
+                margin-bottom: 20px;
+            }
+            button.big {
+                background-color: #{$backgroundColor};
+                color: #{$mainColor};
+            }
+        }
+    }
+}
+
+// End Traction

@@ -1,0 +1,23 @@
+/*
+*** prefix  
+***
+*/
+
+@mixin prefixer($properity,$val,$prefixer:()) {
+    @each $prefix in $prefixer {
+        #{"-"+$prefix+"-"+$properity}:#{$val};
+    }
+    #{$properity}:#{$val}
+}
+
+@mixin padding($p) {padding: #{$p} #{$p}}
+@mixin margin($m) {padding: #{$m} #{$m}}
+
+/* Start Media */
+
+$Mobile:'(max-width:768px)';
+$Medium:'(max-width:992px)';
+$Large:'(max-width:1200px)';
+$Xlarge:'(min-width:1201px)';
+
+/* End Media */
