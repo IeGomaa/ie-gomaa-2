@@ -32,6 +32,12 @@ body {
   font-family: cursive;
 }
 
+@media (max-width: 767px) {
+  body {
+    font-family: 'Akaya Kanadaka' !important;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 3px;
 }
@@ -63,9 +69,9 @@ a {
   margin: 20px auto;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .heading p {
-    width: 467px;
+    width: 373px;
   }
 }
 
@@ -145,6 +151,13 @@ header .navbar-light .navbar-nav .nav-link:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .Navbar .row > .col:first-of-type {
+    -ms-flex-preferred-size: 290px;
+        flex-basis: 290px;
+  }
+}
+
 @media (max-width: 992px) {
   .Navbar .row > .col:last-of-type {
     -ms-flex-preferred-size: 0px;
@@ -213,6 +226,12 @@ header .navbar-light .navbar-nav .nav-link:hover {
   font-size: 20px;
 }
 
+@media (max-width: 768px) {
+  .Navbar .row > .col .text i {
+    margin-left: 0;
+  }
+}
+
 .slider {
   padding: 50px 0px 50px 0px;
   background-color: #f6f6f6;
@@ -227,8 +246,32 @@ header .navbar-light .navbar-nav .nav-link:hover {
   right: 150px;
 }
 
+@media (max-width: 768px) {
+  .slider .owl-carousel .owl-nav button.owl-next {
+    right: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .slider .owl-carousel .owl-nav button.owl-next {
+    right: 15px;
+  }
+}
+
 .slider .owl-carousel .owl-nav button.owl-prev {
   left: 150px;
+}
+
+@media (max-width: 768px) {
+  .slider .owl-carousel .owl-nav button.owl-prev {
+    left: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .slider .owl-carousel .owl-nav button.owl-prev {
+    left: 15px;
+  }
 }
 
 .slider .owl-carousel .owl-nav button.owl-next,

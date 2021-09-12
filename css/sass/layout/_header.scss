@@ -43,6 +43,9 @@ header {
                         margin: auto !important;
                     }
                 }
+                @media #{$Mobile} {
+                    flex-basis: 290px;
+                }
             }
             &:last-of-type {
                 @media #{$Medium} {
@@ -92,6 +95,9 @@ header {
                     margin-left: 20px;
                     font-size: 20px;
                     @extend %cpointer;
+                    @media #{$Mobile} {
+                        margin-left: 0;
+                    }
                 }
             }
         }

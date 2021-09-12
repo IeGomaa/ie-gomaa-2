@@ -9,9 +9,21 @@
     }
     .owl-carousel .owl-nav button.owl-next {
         right: 150px;
+        @media #{$Mobile} {
+            right: 15px;
+        }
+        @media #{$Medium} {
+            right: 15px;
+        }
     }
     .owl-carousel .owl-nav button.owl-prev {
         left: 150px;
+        @media #{$Mobile} {
+            left: 15px;
+        }
+        @media #{$Medium} {
+            left: 15px;
+        }
     }
     .owl-carousel .owl-nav button.owl-next, 
     .owl-carousel .owl-nav button.owl-prev {

@@ -29,6 +29,12 @@ body {
     font-family: cursive;
 }
 
+@media (max-width: 767px) {
+    body {
+      font-family: 'Akaya Kanadaka' !important;
+    }
+}
+
 ::-webkit-scrollbar {
     width: 3px;
 }
@@ -62,8 +68,8 @@ a {
     p {
         width: 570px;
         margin: 20px auto;
-        @media #{$Medium} {
-            width: 467px;
+        @media #{$Mobile} {
+            width: 373px;
         }
     }
 }
