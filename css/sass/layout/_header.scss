@@ -8,17 +8,13 @@ header {
         i {
             color: #FFF;
             font-size: 19px;
-            &:not(:last-of-type) {
-                margin-right: 10px;
-            }     
+            &:not(:last-of-type) {margin-right: 10px}     
         }
     }
     .navbar-light .navbar-nav .nav-link {
         color: #FFF;
         @extend %trans;
-        &:hover {
-            color: #{$backgroundColor};
-        }
+        &:hover {color: #{$backgroundColor}}
     }
 }
 
@@ -39,29 +35,18 @@ header {
             &:first-of-type {
                 @media #{$Medium} {
                     flex-basis: 360px;
-                    h2 {
-                        margin: auto !important;
-                    }
+                    h2 {margin: auto !important}
                 }
-                @media #{$Mobile} {
-                    flex-basis: 290px;
-                }
+                @media #{$Mobile} {flex-basis: 290px}
             }
             &:last-of-type {
-                @media #{$Medium} {
-                    flex-basis: 0px;
-                    flex-grow: 0;
-                }
+                @media #{$Medium} {flex-basis: 0px;flex-grow: 0}
             }
             .word {
                 display: flex;
                 align-items: center;
-                i {
-                    font-size: 20px;
-                }
-                h2 {
-                    margin-left: 20px;
-                }
+                i {font-size: 20px}
+                h2 {margin-left: 20px}
             }
             .list {
                 ul {
@@ -72,13 +57,8 @@ header {
                         @extend %cpointer;
                         height: 35px;
                         line-height: 35px;
-                        &:not(:last-of-type) {
-                            margin-right: 30px;
-                        }
-                        &:before {
-                            background-color: #{$mainColor};
-                            height: 2px;
-                        }
+                        &:not(:last-of-type) {margin-right: 30px}
+                        &:before {background-color: #{$mainColor};height: 2px}
                     }
                 }
             }
@@ -87,17 +67,12 @@ header {
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                p {
-                    @extend %txtcap;
-                    @extend %cpointer;
-                }
+                p {@extend %txtcap;@extend %cpointer}
                 i {
                     margin-left: 20px;
                     font-size: 20px;
                     @extend %cpointer;
-                    @media #{$Mobile} {
-                        margin-left: 0;
-                    }
+                    @media #{$Mobile} {margin-left: 0}
                 }
             }
         }

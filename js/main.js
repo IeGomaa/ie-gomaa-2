@@ -38,8 +38,6 @@ $(document).ready(function() {
         }
     });
 
-    
-
     $(".owl-item").css("opacity",".5");
     $(".owl-item.active").css("opacity","1");
 

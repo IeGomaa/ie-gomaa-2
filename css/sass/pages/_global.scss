@@ -3,8 +3,6 @@
 $mainColor: #202020;
 $backgroundColor: #f6f6f6;
 
-
-
 %cpointer {cursor: pointer}
 %trans {@include prefixer(transition,all .3s ease-in-out,(webkit moz ms o))}
 %txtcap {text-transform: capitalize}
@@ -90,11 +88,7 @@ p {
     height: 50px;
     background-color: #{$backgroundColor};
     z-index: 4;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    @include prefixer(border-radius,50%,(webkit moz ms o));
     border: 1px solid #{$mainColor};
     text-align: center;
     line-height: 45px;
